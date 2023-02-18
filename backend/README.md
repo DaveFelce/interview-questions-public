@@ -55,3 +55,14 @@ source venv/bin/activate
 cd ths
 ./manage.py test
 ````
+
+Possible optimisations
+==============
+
+```
+- pagination (implemented as example)
+- Log and explain queries to see which tables could benefit from indexes
+- put indexes on Assignment table: start_date and end_date?
+- prefetch related records using select_related() as detailed here: https://www.velotio.com/engineering-blog/using-drf-for-faster-apis
+- profile the performance as detailed here: https://www.dabapps.com/blog/api-performance-profiling-django-rest-framework/
+````
